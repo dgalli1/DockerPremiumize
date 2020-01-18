@@ -1,0 +1,26 @@
+[
+  {
+    "id": "sitelink",
+    "type": "inputstring",
+    "name": "Site Link",
+    "value": "https://btdb.eu/"
+  },
+  {
+    "id": "cookieheader",
+    "type": "hiddendata",
+    "name": "CookieHeader",
+    "value": ""
+  },
+  {
+    "id": "lasterror",
+    "type": "hiddendata",
+    "name": "LastError",
+    "value": ""
+  },
+  {
+    "id": "categoryforsonarrandradarr",
+    "type": "displayinfo",
+    "name": "Category for Sonarr and Radarr",
+    "value": "BTDB does not use categories. In your Sonarr or Radarr Torznab Indexer settings, set the category to 100001."
+  }
+]

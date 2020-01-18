@@ -1,0 +1,866 @@
+20-1-18 23:27:05.3|Info|Bootstrap|Starting Sonarr - /usr/lib/sonarr/bin/Sonarr.exe - Version 3.0.3.663
+20-1-18 23:27:06.0|Info|AppFolderInfo|Data directory is being overridden to [/config]
+20-1-18 23:27:06.1|Info|Router|Application mode: Interactive
+20-1-18 23:27:06.3|Info|MigrationLogger|*** Migrating data source=/config/sonarr.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+20-1-18 23:27:06.4|Info|MigrationLogger|*** VersionMigration migrating ***
+20-1-18 23:27:06.5|Info|MigrationLogger|*** VersionUniqueMigration migrating ***
+20-1-18 23:27:06.5|Info|MigrationLogger|*** VersionDescriptionMigration migrating ***
+20-1-18 23:27:06.5|Info|MigrationLogger|*** 1: InitialSetup migrating ***
+20-1-18 23:27:06.5|Info|InitialSetup|Starting migration to 1
+20-1-18 23:27:06.5|Info|MigrationLogger|*** 2: remove_tvrage_imdb_unique_constraint migrating ***
+20-1-18 23:27:06.5|Info|remove_tvrage_imdb_unique_constraint|Starting migration to 2
+20-1-18 23:27:06.5|Info|MigrationLogger|*** 3: remove_renamed_scene_mapping_columns migrating ***
+20-1-18 23:27:06.5|Info|remove_renamed_scene_mapping_columns|Starting migration to 3
+20-1-18 23:27:06.5|Info|MigrationLogger|*** 4: updated_history migrating ***
+20-1-18 23:27:06.5|Info|updated_history|Starting migration to 4
+20-1-18 23:27:06.5|Info|MigrationLogger|*** 5: added_eventtype_to_history migrating ***
+20-1-18 23:27:06.5|Info|added_eventtype_to_history|Starting migration to 5
+20-1-18 23:27:06.5|Info|MigrationLogger|*** 6: add_index_to_log_time migrating ***
+20-1-18 23:27:06.5|Info|add_index_to_log_time|Starting migration to 6
+20-1-18 23:27:06.5|Info|MigrationLogger|*** 7: add_renameEpisodes_to_naming migrating ***
+20-1-18 23:27:06.5|Info|add_renameEpisodes_to_naming|Starting migration to 7
+20-1-18 23:27:06.5|Info|MigrationLogger|*** 8: remove_backlog migrating ***
+20-1-18 23:27:06.5|Info|remove_backlog|Starting migration to 8
+20-1-18 23:27:06.5|Info|MigrationLogger|*** 9: fix_rename_episodes migrating ***
+20-1-18 23:27:06.5|Info|fix_rename_episodes|Starting migration to 9
+20-1-18 23:27:06.6|Info|MigrationLogger|*** 10: add_monitored migrating ***
+20-1-18 23:27:06.6|Info|add_monitored|Starting migration to 10
+20-1-18 23:27:06.6|Info|MigrationLogger|*** 11: remove_ignored migrating ***
+20-1-18 23:27:06.6|Info|remove_ignored|Starting migration to 11
+20-1-18 23:27:06.6|Info|MigrationLogger|*** 12: remove_custom_start_date migrating ***
+20-1-18 23:27:06.6|Info|remove_custom_start_date|Starting migration to 12
+20-1-18 23:27:06.6|Info|MigrationLogger|*** 13: add_air_date_utc migrating ***
+20-1-18 23:27:06.6|Info|add_air_date_utc|Starting migration to 13
+20-1-18 23:27:06.6|Info|MigrationLogger|*** 14: drop_air_date migrating ***
+20-1-18 23:27:06.6|Info|drop_air_date|Starting migration to 14
+20-1-18 23:27:06.6|Info|MigrationLogger|*** 15: add_air_date_as_string migrating ***
+20-1-18 23:27:06.6|Info|add_air_date_as_string|Starting migration to 15
+20-1-18 23:27:06.6|Info|MigrationLogger|*** 16: updated_imported_history_item migrating ***
+20-1-18 23:27:06.6|Info|updated_imported_history_item|Starting migration to 16
+20-1-18 23:27:06.6|Info|MigrationLogger|*** 17: reset_scene_names migrating ***
+20-1-18 23:27:06.6|Info|reset_scene_names|Starting migration to 17
+20-1-18 23:27:06.6|Info|MigrationLogger|*** 18: remove_duplicates migrating ***
+20-1-18 23:27:06.6|Info|remove_duplicates|Starting migration to 18
+20-1-18 23:27:06.6|Info|MigrationLogger|*** 19: restore_unique_constraints migrating ***
+20-1-18 23:27:06.6|Info|restore_unique_constraints|Starting migration to 19
+20-1-18 23:27:06.6|Info|MigrationLogger|*** 20: add_year_and_seasons_to_series migrating ***
+20-1-18 23:27:06.6|Info|add_year_and_seasons_to_series|Starting migration to 20
+20-1-18 23:27:06.6|Info|MigrationLogger|*** 21: drop_seasons_table migrating ***
+20-1-18 23:27:06.6|Info|drop_seasons_table|Starting migration to 21
+20-1-18 23:27:06.6|Info|MigrationLogger|*** 22: move_indexer_to_generic_provider migrating ***
+20-1-18 23:27:06.6|Info|move_indexer_to_generic_provider|Starting migration to 22
+20-1-18 23:27:06.6|Info|MigrationLogger|*** 23: add_config_contract_to_indexers migrating ***
+20-1-18 23:27:06.6|Info|add_config_contract_to_indexers|Starting migration to 23
+20-1-18 23:27:06.6|Info|MigrationLogger|*** 24: drop_tvdb_episodeid migrating ***
+20-1-18 23:27:06.6|Info|drop_tvdb_episodeid|Starting migration to 24
+20-1-18 23:27:06.6|Info|MigrationLogger|*** 25: move_notification_to_generic_provider migrating ***
+20-1-18 23:27:06.6|Info|move_notification_to_generic_provider|Starting migration to 25
+20-1-18 23:27:06.6|Info|MigrationLogger|*** 26: add_config_contract_to_notifications migrating ***
+20-1-18 23:27:06.6|Info|add_config_contract_to_notifications|Starting migration to 26
+20-1-18 23:27:06.6|Info|MigrationLogger|*** 27: fix_omgwtfnzbs migrating ***
+20-1-18 23:27:06.6|Info|fix_omgwtfnzbs|Starting migration to 27
+20-1-18 23:27:06.6|Info|MigrationLogger|*** 28: add_blacklist_table migrating ***
+20-1-18 23:27:06.6|Info|add_blacklist_table|Starting migration to 28
+20-1-18 23:27:06.6|Info|MigrationLogger|*** 29: add_formats_to_naming_config migrating ***
+20-1-18 23:27:06.6|Info|add_formats_to_naming_config|Starting migration to 29
+20-1-18 23:27:06.6|Info|MigrationLogger|*** 30: add_season_folder_format_to_naming_config migrating ***
+20-1-18 23:27:06.6|Info|add_season_folder_format_to_naming_config|Starting migration to 30
+20-1-18 23:27:06.6|Info|MigrationLogger|*** 31: delete_old_naming_config_columns migrating ***
+20-1-18 23:27:06.6|Info|delete_old_naming_config_columns|Starting migration to 31
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 32: set_default_release_group migrating ***
+20-1-18 23:27:06.7|Info|set_default_release_group|Starting migration to 32
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 33: add_api_key_to_pushover migrating ***
+20-1-18 23:27:06.7|Info|add_api_key_to_pushover|Starting migration to 33
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 34: remove_series_contraints migrating ***
+20-1-18 23:27:06.7|Info|remove_series_contraints|Starting migration to 34
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 35: add_series_folder_format_to_naming_config migrating ***
+20-1-18 23:27:06.7|Info|add_series_folder_format_to_naming_config|Starting migration to 35
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 36: update_with_quality_converters migrating ***
+20-1-18 23:27:06.7|Info|update_with_quality_converters|Starting migration to 36
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 37: add_configurable_qualities migrating ***
+20-1-18 23:27:06.7|Info|add_configurable_qualities|Starting migration to 37
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 38: add_on_upgrade_to_notifications migrating ***
+20-1-18 23:27:06.7|Info|add_on_upgrade_to_notifications|Starting migration to 38
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 39: add_metadata_tables migrating ***
+20-1-18 23:27:06.7|Info|add_metadata_tables|Starting migration to 39
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 40: add_metadata_to_episodes_and_series migrating ***
+20-1-18 23:27:06.7|Info|add_metadata_to_episodes_and_series|Starting migration to 40
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 41: fix_xbmc_season_images_metadata migrating ***
+20-1-18 23:27:06.7|Info|fix_xbmc_season_images_metadata|Starting migration to 41
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 42: add_download_clients_table migrating ***
+20-1-18 23:27:06.7|Info|add_download_clients_table|Starting migration to 42
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 43: convert_config_to_download_clients migrating ***
+20-1-18 23:27:06.7|Info|convert_config_to_download_clients|Starting migration to 43
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 44: fix_xbmc_episode_metadata migrating ***
+20-1-18 23:27:06.7|Info|fix_xbmc_episode_metadata|Starting migration to 44
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 45: add_indexes migrating ***
+20-1-18 23:27:06.7|Info|add_indexes|Starting migration to 45
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 46: fix_nzb_su_url migrating ***
+20-1-18 23:27:06.7|Info|fix_nzb_su_url|Starting migration to 46
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 47: add_temporary_blacklist_columns migrating ***
+20-1-18 23:27:06.7|Info|add_temporary_blacklist_columns|Starting migration to 47
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 48: add_title_to_scenemappings migrating ***
+20-1-18 23:27:06.7|Info|add_title_to_scenemappings|Starting migration to 48
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 49: fix_dognzb_url migrating ***
+20-1-18 23:27:06.7|Info|fix_dognzb_url|Starting migration to 49
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 50: add_hash_to_metadata_files migrating ***
+20-1-18 23:27:06.7|Info|add_hash_to_metadata_files|Starting migration to 50
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 51: download_client_import migrating ***
+20-1-18 23:27:06.7|Info|download_client_import|Starting migration to 51
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 52: add_columns_for_anime migrating ***
+20-1-18 23:27:06.7|Info|add_columns_for_anime|Starting migration to 52
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 53: add_series_sorttitle migrating ***
+20-1-18 23:27:06.7|Info|add_series_sorttitle|Starting migration to 53
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 54: rename_profiles migrating ***
+20-1-18 23:27:06.7|Info|rename_profiles|Starting migration to 54
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 55: drop_old_profile_columns migrating ***
+20-1-18 23:27:06.7|Info|drop_old_profile_columns|Starting migration to 55
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 56: add_mediainfo_to_episodefile migrating ***
+20-1-18 23:27:06.7|Info|add_mediainfo_to_episodefile|Starting migration to 56
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 57: convert_episode_file_path_to_relative migrating ***
+20-1-18 23:27:06.7|Info|convert_episode_file_path_to_relative|Starting migration to 57
+20-1-18 23:27:06.7|Info|MigrationLogger|*** 58: drop_episode_file_path migrating ***
+20-1-18 23:27:06.7|Info|drop_episode_file_path|Starting migration to 58
+20-1-18 23:27:06.8|Info|MigrationLogger|*** 59: add_enable_options_to_indexers migrating ***
+20-1-18 23:27:06.8|Info|add_enable_options_to_indexers|Starting migration to 59
+20-1-18 23:27:06.8|Info|MigrationLogger|*** 60: remove_enable_from_indexers migrating ***
+20-1-18 23:27:06.8|Info|remove_enable_from_indexers|Starting migration to 60
+20-1-18 23:27:06.8|Info|MigrationLogger|*** 61: clear_bad_scene_names migrating ***
+20-1-18 23:27:06.8|Info|clear_bad_scene_names|Starting migration to 61
+20-1-18 23:27:06.8|Info|MigrationLogger|*** 62: convert_quality_models migrating ***
+20-1-18 23:27:06.8|Info|convert_quality_models|Starting migration to 62
+20-1-18 23:27:06.8|Info|MigrationLogger|*** 63: add_remotepathmappings migrating ***
+20-1-18 23:27:06.8|Info|add_remotepathmappings|Starting migration to 63
+20-1-18 23:27:06.8|Info|MigrationLogger|*** 64: remove_method_from_logs migrating ***
+20-1-18 23:27:06.8|Info|remove_method_from_logs|Starting migration to 64
+20-1-18 23:27:06.8|Info|MigrationLogger|*** 65: make_scene_numbering_nullable migrating ***
+20-1-18 23:27:06.8|Info|make_scene_numbering_nullable|Starting migration to 65
+20-1-18 23:27:06.8|Info|MigrationLogger|*** 66: add_tags migrating ***
+20-1-18 23:27:06.8|Info|add_tags|Starting migration to 66
+20-1-18 23:27:06.8|Info|MigrationLogger|*** 67: add_added_to_series migrating ***
+20-1-18 23:27:06.8|Info|add_added_to_series|Starting migration to 67
+20-1-18 23:27:06.8|Info|MigrationLogger|*** 68: add_release_restrictions migrating ***
+20-1-18 23:27:06.8|Info|add_release_restrictions|Starting migration to 68
+20-1-18 23:27:06.8|Info|MigrationLogger|*** 69: quality_proper migrating ***
+20-1-18 23:27:06.8|Info|quality_proper|Starting migration to 69
+20-1-18 23:27:06.8|Info|MigrationLogger|*** 70: delay_profile migrating ***
+20-1-18 23:27:06.8|Info|delay_profile|Starting migration to 70
+20-1-18 23:27:06.8|Info|MigrationLogger|*** 71: unknown_quality_in_profile migrating ***
+20-1-18 23:27:06.8|Info|unknown_quality_in_profile|Starting migration to 71
+20-1-18 23:27:06.8|Info|MigrationLogger|*** 72: history_downloadId migrating ***
+20-1-18 23:27:06.8|Info|history_downloadId|Starting migration to 72
+20-1-18 23:27:06.8|Info|MigrationLogger|*** 73: clear_ratings migrating ***
+20-1-18 23:27:06.8|Info|clear_ratings|Starting migration to 73
+20-1-18 23:27:06.8|Info|MigrationLogger|*** 74: disable_eztv migrating ***
+20-1-18 23:27:06.8|Info|disable_eztv|Starting migration to 74
+20-1-18 23:27:06.8|Info|MigrationLogger|*** 75: force_lib_update migrating ***
+20-1-18 23:27:06.8|Info|force_lib_update|Starting migration to 75
+20-1-18 23:27:06.8|Info|MigrationLogger|*** 76: add_users_table migrating ***
+20-1-18 23:27:06.8|Info|add_users_table|Starting migration to 76
+20-1-18 23:27:06.8|Info|MigrationLogger|*** 77: add_add_options_to_series migrating ***
+20-1-18 23:27:06.8|Info|add_add_options_to_series|Starting migration to 77
+20-1-18 23:27:06.8|Info|MigrationLogger|*** 78: add_commands_table migrating ***
+20-1-18 23:27:06.8|Info|add_commands_table|Starting migration to 78
+20-1-18 23:27:06.8|Info|MigrationLogger|*** 79: dedupe_tags migrating ***
+20-1-18 23:27:06.8|Info|dedupe_tags|Starting migration to 79
+20-1-18 23:27:06.9|Info|MigrationLogger|*** 81: move_dot_prefix_to_transmission_category migrating ***
+20-1-18 23:27:06.9|Info|move_dot_prefix_to_transmission_category|Starting migration to 81
+20-1-18 23:27:06.9|Info|MigrationLogger|*** 82: add_fanzub_settings migrating ***
+20-1-18 23:27:06.9|Info|add_fanzub_settings|Starting migration to 82
+20-1-18 23:27:06.9|Info|MigrationLogger|*** 83: additonal_blacklist_columns migrating ***
+20-1-18 23:27:06.9|Info|additonal_blacklist_columns|Starting migration to 83
+20-1-18 23:27:06.9|Info|MigrationLogger|*** 84: update_quality_minmax_size migrating ***
+20-1-18 23:27:06.9|Info|update_quality_minmax_size|Starting migration to 84
+20-1-18 23:27:06.9|Info|MigrationLogger|*** 85: expand_transmission_urlbase migrating ***
+20-1-18 23:27:06.9|Info|expand_transmission_urlbase|Starting migration to 85
+20-1-18 23:27:06.9|Info|MigrationLogger|*** 86: pushbullet_device_ids migrating ***
+20-1-18 23:27:06.9|Info|pushbullet_device_ids|Starting migration to 86
+20-1-18 23:27:06.9|Info|MigrationLogger|*** 87: remove_eztv migrating ***
+20-1-18 23:27:06.9|Info|remove_eztv|Starting migration to 87
+20-1-18 23:27:06.9|Info|MigrationLogger|*** 88: pushbullet_devices_channels_list migrating ***
+20-1-18 23:27:06.9|Info|pushbullet_devices_channels_list|Starting migration to 88
+20-1-18 23:27:06.9|Info|MigrationLogger|*** 89: add_on_rename_to_notifcations migrating ***
+20-1-18 23:27:06.9|Info|add_on_rename_to_notifcations|Starting migration to 89
+20-1-18 23:27:06.9|Info|MigrationLogger|*** 90: update_kickass_url migrating ***
+20-1-18 23:27:06.9|Info|update_kickass_url|Starting migration to 90
+20-1-18 23:27:06.9|Info|MigrationLogger|*** 91: added_indexerstatus migrating ***
+20-1-18 23:27:06.9|Info|added_indexerstatus|Starting migration to 91
+20-1-18 23:27:06.9|Info|MigrationLogger|*** 92: add_unverifiedscenenumbering migrating ***
+20-1-18 23:27:06.9|Info|add_unverifiedscenenumbering|Starting migration to 92
+20-1-18 23:27:06.9|Info|MigrationLogger|*** 93: naming_config_replace_illegal_characters migrating ***
+20-1-18 23:27:06.9|Info|naming_config_replace_illegal_characters|Starting migration to 93
+20-1-18 23:27:06.9|Info|MigrationLogger|*** 94: add_tvmazeid migrating ***
+20-1-18 23:27:06.9|Info|add_tvmazeid|Starting migration to 94
+20-1-18 23:27:06.9|Info|MigrationLogger|*** 95: add_additional_episodes_index migrating ***
+20-1-18 23:27:06.9|Info|add_additional_episodes_index|Starting migration to 95
+20-1-18 23:27:07.0|Info|MigrationLogger|*** 96: disable_kickass migrating ***
+20-1-18 23:27:07.0|Info|disable_kickass|Starting migration to 96
+20-1-18 23:27:07.0|Info|MigrationLogger|*** 97: add_reason_to_pending_releases migrating ***
+20-1-18 23:27:07.0|Info|add_reason_to_pending_releases|Starting migration to 97
+20-1-18 23:27:07.0|Info|MigrationLogger|*** 98: remove_titans_of_tv migrating ***
+20-1-18 23:27:07.0|Info|remove_titans_of_tv|Starting migration to 98
+20-1-18 23:27:07.0|Info|MigrationLogger|*** 99: extra_and_subtitle_files migrating ***
+20-1-18 23:27:07.0|Info|extra_and_subtitle_files|Starting migration to 99
+20-1-18 23:27:07.0|Info|MigrationLogger|*** 100: add_scene_season_number migrating ***
+20-1-18 23:27:07.0|Info|add_scene_season_number|Starting migration to 100
+20-1-18 23:27:07.0|Info|MigrationLogger|*** 101: add_ultrahd_quality_in_profiles migrating ***
+20-1-18 23:27:07.0|Info|add_ultrahd_quality_in_profiles|Starting migration to 101
+20-1-18 23:27:07.0|Info|MigrationLogger|*** 102: add_language_to_episodeFiles_history_and_blacklist migrating ***
+20-1-18 23:27:07.0|Info|add_language_to_episodeFiles_history_and_blacklist|Starting migration to 102
+20-1-18 23:27:07.0|Info|MigrationLogger|*** 103: fix_metadata_file_extensions migrating ***
+20-1-18 23:27:07.0|Info|fix_metadata_file_extensions|Starting migration to 103
+20-1-18 23:27:07.0|Info|MigrationLogger|*** 104: remove_kickass migrating ***
+20-1-18 23:27:07.0|Info|remove_kickass|Starting migration to 104
+20-1-18 23:27:07.0|Info|MigrationLogger|*** 105: rename_torrent_downloadstation migrating ***
+20-1-18 23:27:07.0|Info|rename_torrent_downloadstation|Starting migration to 105
+20-1-18 23:27:07.0|Info|MigrationLogger|*** 106: update_btn_url migrating ***
+20-1-18 23:27:07.0|Info|update_btn_url|Starting migration to 106
+20-1-18 23:27:07.0|Info|MigrationLogger|*** 107: remove_wombles migrating ***
+20-1-18 23:27:07.0|Info|remove_wombles|Starting migration to 107
+20-1-18 23:27:07.0|Info|MigrationLogger|*** 108: fix_extra_file_extension migrating ***
+20-1-18 23:27:07.0|Info|fix_extra_file_extension|Starting migration to 108
+20-1-18 23:27:07.0|Info|MigrationLogger|*** 109: import_extra_files migrating ***
+20-1-18 23:27:07.0|Info|import_extra_files|Starting migration to 109
+20-1-18 23:27:07.0|Info|MigrationLogger|*** 110: fix_extra_files_config migrating ***
+20-1-18 23:27:07.0|Info|fix_extra_files_config|Starting migration to 110
+20-1-18 23:27:07.0|Info|MigrationLogger|*** 111: create_language_profiles migrating ***
+20-1-18 23:27:07.0|Info|create_language_profiles|Starting migration to 111
+20-1-18 23:27:07.0|Info|MigrationLogger|*** 112: added_regex_to_scenemapping migrating ***
+20-1-18 23:27:07.0|Info|added_regex_to_scenemapping|Starting migration to 112
+20-1-18 23:27:07.0|Info|MigrationLogger|*** 113: consolidate_indexer_baseurl migrating ***
+20-1-18 23:27:07.0|Info|consolidate_indexer_baseurl|Starting migration to 113
+20-1-18 23:27:07.0|Info|MigrationLogger|*** 114: rename_indexer_status_id migrating ***
+20-1-18 23:27:07.0|Info|rename_indexer_status_id|Starting migration to 114
+20-1-18 23:27:07.0|Info|MigrationLogger|*** 115: add_downloadclient_status migrating ***
+20-1-18 23:27:07.0|Info|add_downloadclient_status|Starting migration to 115
+20-1-18 23:27:07.0|Info|MigrationLogger|*** 116: disable_nyaa migrating ***
+20-1-18 23:27:07.0|Info|disable_nyaa|Starting migration to 116
+20-1-18 23:27:07.0|Info|MigrationLogger|*** 117: add_webrip_and_br480_qualites_in_profile migrating ***
+20-1-18 23:27:07.0|Info|add_webrip_and_br480_qualites_in_profile|Starting migration to 117
+20-1-18 23:27:07.1|Info|MigrationLogger|*** 118: add_history_eventType_index migrating ***
+20-1-18 23:27:07.1|Info|add_history_eventType_index|Starting migration to 118
+20-1-18 23:27:07.1|Info|MigrationLogger|*** 119: separate_automatic_and_interactive_searches migrating ***
+20-1-18 23:27:07.1|Info|separate_automatic_and_interactive_searches|Starting migration to 119
+20-1-18 23:27:07.1|Info|MigrationLogger|*** 120: update_series_episodes_history_indexes migrating ***
+20-1-18 23:27:07.1|Info|update_series_episodes_history_indexes|Starting migration to 120
+20-1-18 23:27:07.1|Info|MigrationLogger|*** 121: update_animetosho_url migrating ***
+20-1-18 23:27:07.1|Info|update_animetosho_url|Starting migration to 121
+20-1-18 23:27:07.1|Info|MigrationLogger|*** 122: add_remux_qualities_in_profile migrating ***
+20-1-18 23:27:07.1|Info|add_remux_qualities_in_profile|Starting migration to 122
+20-1-18 23:27:07.1|Info|MigrationLogger|*** 123: add_history_seriesId_index migrating ***
+20-1-18 23:27:07.1|Info|add_history_seriesId_index|Starting migration to 123
+20-1-18 23:27:07.1|Info|MigrationLogger|*** 124: remove_media_browser_metadata migrating ***
+20-1-18 23:27:07.1|Info|remove_media_browser_metadata|Starting migration to 124
+20-1-18 23:27:07.1|Info|MigrationLogger|*** 125: remove_notify_my_android_and_pushalot_notifications migrating ***
+20-1-18 23:27:07.1|Info|remove_notify_my_android_and_pushalot_notifications|Starting migration to 125
+20-1-18 23:27:07.1|Info|MigrationLogger|*** 126: add_custom_filters migrating ***
+20-1-18 23:27:07.1|Info|add_custom_filters|Starting migration to 126
+20-1-18 23:27:07.1|Info|MigrationLogger|*** 127: rename_restrictions_to_release_profiles migrating ***
+20-1-18 23:27:07.1|Info|rename_restrictions_to_release_profiles|Starting migration to 127
+20-1-18 23:27:07.1|Info|MigrationLogger|*** 128: rename_quality_profiles_add_upgrade_allowed migrating ***
+20-1-18 23:27:07.1|Info|rename_quality_profiles_add_upgrade_allowed|Starting migration to 128
+20-1-18 23:27:07.1|Info|MigrationLogger|*** 129: add_relative_original_path_to_episode_file migrating ***
+20-1-18 23:27:07.1|Info|add_relative_original_path_to_episode_file|Starting migration to 129
+20-1-18 23:27:07.1|Info|MigrationLogger|*** 130: episode_last_searched_time migrating ***
+20-1-18 23:27:07.1|Info|episode_last_searched_time|Starting migration to 130
+20-1-18 23:27:07.1|Info|MigrationLogger|*** 131: download_propers_config migrating ***
+20-1-18 23:27:07.1|Info|download_propers_config|Starting migration to 131
+20-1-18 23:27:07.1|Info|MigrationLogger|*** 132: add_download_client_priority migrating ***
+20-1-18 23:27:07.1|Info|add_download_client_priority|Starting migration to 132
+20-1-18 23:27:07.1|Info|MigrationLogger|*** 134: add_specials_folder_format migrating ***
+20-1-18 23:27:07.1|Info|add_specials_folder_format|Starting migration to 134
+20-1-18 23:27:07.1|Info|MigrationLogger|*** 135: health_issue_notification migrating ***
+20-1-18 23:27:07.1|Info|health_issue_notification|Starting migration to 135
+20-1-18 23:27:07.1|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+20-1-18 23:27:07.1|Info|MigrationLogger|*** VersionMigration migrating ***
+20-1-18 23:27:07.1|Info|MigrationLogger|*** VersionUniqueMigration migrating ***
+20-1-18 23:27:07.1|Info|MigrationLogger|*** VersionDescriptionMigration migrating ***
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 1: InitialSetup migrating ***
+20-1-18 23:27:07.2|Info|InitialSetup|Starting migration to 1
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 2: remove_tvrage_imdb_unique_constraint migrating ***
+20-1-18 23:27:07.2|Info|remove_tvrage_imdb_unique_constraint|Starting migration to 2
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 3: remove_renamed_scene_mapping_columns migrating ***
+20-1-18 23:27:07.2|Info|remove_renamed_scene_mapping_columns|Starting migration to 3
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 4: updated_history migrating ***
+20-1-18 23:27:07.2|Info|updated_history|Starting migration to 4
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 5: added_eventtype_to_history migrating ***
+20-1-18 23:27:07.2|Info|added_eventtype_to_history|Starting migration to 5
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 6: add_index_to_log_time migrating ***
+20-1-18 23:27:07.2|Info|add_index_to_log_time|Starting migration to 6
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 7: add_renameEpisodes_to_naming migrating ***
+20-1-18 23:27:07.2|Info|add_renameEpisodes_to_naming|Starting migration to 7
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 8: remove_backlog migrating ***
+20-1-18 23:27:07.2|Info|remove_backlog|Starting migration to 8
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 9: fix_rename_episodes migrating ***
+20-1-18 23:27:07.2|Info|fix_rename_episodes|Starting migration to 9
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 10: add_monitored migrating ***
+20-1-18 23:27:07.2|Info|add_monitored|Starting migration to 10
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 11: remove_ignored migrating ***
+20-1-18 23:27:07.2|Info|remove_ignored|Starting migration to 11
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 12: remove_custom_start_date migrating ***
+20-1-18 23:27:07.2|Info|remove_custom_start_date|Starting migration to 12
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 13: add_air_date_utc migrating ***
+20-1-18 23:27:07.2|Info|add_air_date_utc|Starting migration to 13
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 14: drop_air_date migrating ***
+20-1-18 23:27:07.2|Info|drop_air_date|Starting migration to 14
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 15: add_air_date_as_string migrating ***
+20-1-18 23:27:07.2|Info|add_air_date_as_string|Starting migration to 15
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 16: updated_imported_history_item migrating ***
+20-1-18 23:27:07.2|Info|updated_imported_history_item|Starting migration to 16
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 17: reset_scene_names migrating ***
+20-1-18 23:27:07.2|Info|reset_scene_names|Starting migration to 17
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 18: remove_duplicates migrating ***
+20-1-18 23:27:07.2|Info|remove_duplicates|Starting migration to 18
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 19: restore_unique_constraints migrating ***
+20-1-18 23:27:07.2|Info|restore_unique_constraints|Starting migration to 19
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 20: add_year_and_seasons_to_series migrating ***
+20-1-18 23:27:07.2|Info|add_year_and_seasons_to_series|Starting migration to 20
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 21: drop_seasons_table migrating ***
+20-1-18 23:27:07.2|Info|drop_seasons_table|Starting migration to 21
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 22: move_indexer_to_generic_provider migrating ***
+20-1-18 23:27:07.2|Info|move_indexer_to_generic_provider|Starting migration to 22
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 23: add_config_contract_to_indexers migrating ***
+20-1-18 23:27:07.2|Info|add_config_contract_to_indexers|Starting migration to 23
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 24: drop_tvdb_episodeid migrating ***
+20-1-18 23:27:07.2|Info|drop_tvdb_episodeid|Starting migration to 24
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 25: move_notification_to_generic_provider migrating ***
+20-1-18 23:27:07.2|Info|move_notification_to_generic_provider|Starting migration to 25
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 26: add_config_contract_to_notifications migrating ***
+20-1-18 23:27:07.2|Info|add_config_contract_to_notifications|Starting migration to 26
+20-1-18 23:27:07.2|Info|MigrationLogger|*** 27: fix_omgwtfnzbs migrating ***
+20-1-18 23:27:07.2|Info|fix_omgwtfnzbs|Starting migration to 27
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 28: add_blacklist_table migrating ***
+20-1-18 23:27:07.3|Info|add_blacklist_table|Starting migration to 28
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 29: add_formats_to_naming_config migrating ***
+20-1-18 23:27:07.3|Info|add_formats_to_naming_config|Starting migration to 29
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 30: add_season_folder_format_to_naming_config migrating ***
+20-1-18 23:27:07.3|Info|add_season_folder_format_to_naming_config|Starting migration to 30
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 31: delete_old_naming_config_columns migrating ***
+20-1-18 23:27:07.3|Info|delete_old_naming_config_columns|Starting migration to 31
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 32: set_default_release_group migrating ***
+20-1-18 23:27:07.3|Info|set_default_release_group|Starting migration to 32
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 33: add_api_key_to_pushover migrating ***
+20-1-18 23:27:07.3|Info|add_api_key_to_pushover|Starting migration to 33
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 34: remove_series_contraints migrating ***
+20-1-18 23:27:07.3|Info|remove_series_contraints|Starting migration to 34
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 35: add_series_folder_format_to_naming_config migrating ***
+20-1-18 23:27:07.3|Info|add_series_folder_format_to_naming_config|Starting migration to 35
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 36: update_with_quality_converters migrating ***
+20-1-18 23:27:07.3|Info|update_with_quality_converters|Starting migration to 36
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 37: add_configurable_qualities migrating ***
+20-1-18 23:27:07.3|Info|add_configurable_qualities|Starting migration to 37
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 38: add_on_upgrade_to_notifications migrating ***
+20-1-18 23:27:07.3|Info|add_on_upgrade_to_notifications|Starting migration to 38
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 39: add_metadata_tables migrating ***
+20-1-18 23:27:07.3|Info|add_metadata_tables|Starting migration to 39
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 40: add_metadata_to_episodes_and_series migrating ***
+20-1-18 23:27:07.3|Info|add_metadata_to_episodes_and_series|Starting migration to 40
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 41: fix_xbmc_season_images_metadata migrating ***
+20-1-18 23:27:07.3|Info|fix_xbmc_season_images_metadata|Starting migration to 41
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 42: add_download_clients_table migrating ***
+20-1-18 23:27:07.3|Info|add_download_clients_table|Starting migration to 42
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 43: convert_config_to_download_clients migrating ***
+20-1-18 23:27:07.3|Info|convert_config_to_download_clients|Starting migration to 43
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 44: fix_xbmc_episode_metadata migrating ***
+20-1-18 23:27:07.3|Info|fix_xbmc_episode_metadata|Starting migration to 44
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 45: add_indexes migrating ***
+20-1-18 23:27:07.3|Info|add_indexes|Starting migration to 45
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 46: fix_nzb_su_url migrating ***
+20-1-18 23:27:07.3|Info|fix_nzb_su_url|Starting migration to 46
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 47: add_temporary_blacklist_columns migrating ***
+20-1-18 23:27:07.3|Info|add_temporary_blacklist_columns|Starting migration to 47
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 48: add_title_to_scenemappings migrating ***
+20-1-18 23:27:07.3|Info|add_title_to_scenemappings|Starting migration to 48
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 49: fix_dognzb_url migrating ***
+20-1-18 23:27:07.3|Info|fix_dognzb_url|Starting migration to 49
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 50: add_hash_to_metadata_files migrating ***
+20-1-18 23:27:07.3|Info|add_hash_to_metadata_files|Starting migration to 50
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 51: download_client_import migrating ***
+20-1-18 23:27:07.3|Info|download_client_import|Starting migration to 51
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 52: add_columns_for_anime migrating ***
+20-1-18 23:27:07.3|Info|add_columns_for_anime|Starting migration to 52
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 53: add_series_sorttitle migrating ***
+20-1-18 23:27:07.3|Info|add_series_sorttitle|Starting migration to 53
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 54: rename_profiles migrating ***
+20-1-18 23:27:07.3|Info|rename_profiles|Starting migration to 54
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 55: drop_old_profile_columns migrating ***
+20-1-18 23:27:07.3|Info|drop_old_profile_columns|Starting migration to 55
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 56: add_mediainfo_to_episodefile migrating ***
+20-1-18 23:27:07.3|Info|add_mediainfo_to_episodefile|Starting migration to 56
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 57: convert_episode_file_path_to_relative migrating ***
+20-1-18 23:27:07.3|Info|convert_episode_file_path_to_relative|Starting migration to 57
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 58: drop_episode_file_path migrating ***
+20-1-18 23:27:07.3|Info|drop_episode_file_path|Starting migration to 58
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 59: add_enable_options_to_indexers migrating ***
+20-1-18 23:27:07.3|Info|add_enable_options_to_indexers|Starting migration to 59
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 60: remove_enable_from_indexers migrating ***
+20-1-18 23:27:07.3|Info|remove_enable_from_indexers|Starting migration to 60
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 61: clear_bad_scene_names migrating ***
+20-1-18 23:27:07.3|Info|clear_bad_scene_names|Starting migration to 61
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 62: convert_quality_models migrating ***
+20-1-18 23:27:07.3|Info|convert_quality_models|Starting migration to 62
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 63: add_remotepathmappings migrating ***
+20-1-18 23:27:07.3|Info|add_remotepathmappings|Starting migration to 63
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 64: remove_method_from_logs migrating ***
+20-1-18 23:27:07.3|Info|remove_method_from_logs|Starting migration to 64
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 65: make_scene_numbering_nullable migrating ***
+20-1-18 23:27:07.3|Info|make_scene_numbering_nullable|Starting migration to 65
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 66: add_tags migrating ***
+20-1-18 23:27:07.3|Info|add_tags|Starting migration to 66
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 67: add_added_to_series migrating ***
+20-1-18 23:27:07.3|Info|add_added_to_series|Starting migration to 67
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 68: add_release_restrictions migrating ***
+20-1-18 23:27:07.3|Info|add_release_restrictions|Starting migration to 68
+20-1-18 23:27:07.3|Info|MigrationLogger|*** 69: quality_proper migrating ***
+20-1-18 23:27:07.3|Info|quality_proper|Starting migration to 69
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 70: delay_profile migrating ***
+20-1-18 23:27:07.4|Info|delay_profile|Starting migration to 70
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 71: unknown_quality_in_profile migrating ***
+20-1-18 23:27:07.4|Info|unknown_quality_in_profile|Starting migration to 71
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 72: history_downloadId migrating ***
+20-1-18 23:27:07.4|Info|history_downloadId|Starting migration to 72
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 73: clear_ratings migrating ***
+20-1-18 23:27:07.4|Info|clear_ratings|Starting migration to 73
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 74: disable_eztv migrating ***
+20-1-18 23:27:07.4|Info|disable_eztv|Starting migration to 74
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 75: force_lib_update migrating ***
+20-1-18 23:27:07.4|Info|force_lib_update|Starting migration to 75
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 76: add_users_table migrating ***
+20-1-18 23:27:07.4|Info|add_users_table|Starting migration to 76
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 77: add_add_options_to_series migrating ***
+20-1-18 23:27:07.4|Info|add_add_options_to_series|Starting migration to 77
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 78: add_commands_table migrating ***
+20-1-18 23:27:07.4|Info|add_commands_table|Starting migration to 78
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 79: dedupe_tags migrating ***
+20-1-18 23:27:07.4|Info|dedupe_tags|Starting migration to 79
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 81: move_dot_prefix_to_transmission_category migrating ***
+20-1-18 23:27:07.4|Info|move_dot_prefix_to_transmission_category|Starting migration to 81
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 82: add_fanzub_settings migrating ***
+20-1-18 23:27:07.4|Info|add_fanzub_settings|Starting migration to 82
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 83: additonal_blacklist_columns migrating ***
+20-1-18 23:27:07.4|Info|additonal_blacklist_columns|Starting migration to 83
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 84: update_quality_minmax_size migrating ***
+20-1-18 23:27:07.4|Info|update_quality_minmax_size|Starting migration to 84
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 85: expand_transmission_urlbase migrating ***
+20-1-18 23:27:07.4|Info|expand_transmission_urlbase|Starting migration to 85
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 86: pushbullet_device_ids migrating ***
+20-1-18 23:27:07.4|Info|pushbullet_device_ids|Starting migration to 86
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 87: remove_eztv migrating ***
+20-1-18 23:27:07.4|Info|remove_eztv|Starting migration to 87
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 88: pushbullet_devices_channels_list migrating ***
+20-1-18 23:27:07.4|Info|pushbullet_devices_channels_list|Starting migration to 88
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 89: add_on_rename_to_notifcations migrating ***
+20-1-18 23:27:07.4|Info|add_on_rename_to_notifcations|Starting migration to 89
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 90: update_kickass_url migrating ***
+20-1-18 23:27:07.4|Info|update_kickass_url|Starting migration to 90
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 91: added_indexerstatus migrating ***
+20-1-18 23:27:07.4|Info|added_indexerstatus|Starting migration to 91
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 92: add_unverifiedscenenumbering migrating ***
+20-1-18 23:27:07.4|Info|add_unverifiedscenenumbering|Starting migration to 92
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 93: naming_config_replace_illegal_characters migrating ***
+20-1-18 23:27:07.4|Info|naming_config_replace_illegal_characters|Starting migration to 93
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 94: add_tvmazeid migrating ***
+20-1-18 23:27:07.4|Info|add_tvmazeid|Starting migration to 94
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 95: add_additional_episodes_index migrating ***
+20-1-18 23:27:07.4|Info|add_additional_episodes_index|Starting migration to 95
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 96: disable_kickass migrating ***
+20-1-18 23:27:07.4|Info|disable_kickass|Starting migration to 96
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 97: add_reason_to_pending_releases migrating ***
+20-1-18 23:27:07.4|Info|add_reason_to_pending_releases|Starting migration to 97
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 98: remove_titans_of_tv migrating ***
+20-1-18 23:27:07.4|Info|remove_titans_of_tv|Starting migration to 98
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 99: extra_and_subtitle_files migrating ***
+20-1-18 23:27:07.4|Info|extra_and_subtitle_files|Starting migration to 99
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 100: add_scene_season_number migrating ***
+20-1-18 23:27:07.4|Info|add_scene_season_number|Starting migration to 100
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 101: add_ultrahd_quality_in_profiles migrating ***
+20-1-18 23:27:07.4|Info|add_ultrahd_quality_in_profiles|Starting migration to 101
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 102: add_language_to_episodeFiles_history_and_blacklist migrating ***
+20-1-18 23:27:07.4|Info|add_language_to_episodeFiles_history_and_blacklist|Starting migration to 102
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 103: fix_metadata_file_extensions migrating ***
+20-1-18 23:27:07.4|Info|fix_metadata_file_extensions|Starting migration to 103
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 104: remove_kickass migrating ***
+20-1-18 23:27:07.4|Info|remove_kickass|Starting migration to 104
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 105: rename_torrent_downloadstation migrating ***
+20-1-18 23:27:07.4|Info|rename_torrent_downloadstation|Starting migration to 105
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 106: update_btn_url migrating ***
+20-1-18 23:27:07.4|Info|update_btn_url|Starting migration to 106
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 107: remove_wombles migrating ***
+20-1-18 23:27:07.4|Info|remove_wombles|Starting migration to 107
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 108: fix_extra_file_extension migrating ***
+20-1-18 23:27:07.4|Info|fix_extra_file_extension|Starting migration to 108
+20-1-18 23:27:07.4|Info|MigrationLogger|*** 109: import_extra_files migrating ***
+20-1-18 23:27:07.4|Info|import_extra_files|Starting migration to 109
+20-1-18 23:27:07.5|Info|MigrationLogger|*** 110: fix_extra_files_config migrating ***
+20-1-18 23:27:07.5|Info|fix_extra_files_config|Starting migration to 110
+20-1-18 23:27:07.5|Info|MigrationLogger|*** 111: create_language_profiles migrating ***
+20-1-18 23:27:07.5|Info|create_language_profiles|Starting migration to 111
+20-1-18 23:27:07.5|Info|MigrationLogger|*** 112: added_regex_to_scenemapping migrating ***
+20-1-18 23:27:07.5|Info|added_regex_to_scenemapping|Starting migration to 112
+20-1-18 23:27:07.5|Info|MigrationLogger|*** 113: consolidate_indexer_baseurl migrating ***
+20-1-18 23:27:07.5|Info|consolidate_indexer_baseurl|Starting migration to 113
+20-1-18 23:27:07.5|Info|MigrationLogger|*** 114: rename_indexer_status_id migrating ***
+20-1-18 23:27:07.5|Info|rename_indexer_status_id|Starting migration to 114
+20-1-18 23:27:07.5|Info|MigrationLogger|*** 115: add_downloadclient_status migrating ***
+20-1-18 23:27:07.5|Info|add_downloadclient_status|Starting migration to 115
+20-1-18 23:27:07.5|Info|MigrationLogger|*** 116: disable_nyaa migrating ***
+20-1-18 23:27:07.5|Info|disable_nyaa|Starting migration to 116
+20-1-18 23:27:07.5|Info|MigrationLogger|*** 117: add_webrip_and_br480_qualites_in_profile migrating ***
+20-1-18 23:27:07.5|Info|add_webrip_and_br480_qualites_in_profile|Starting migration to 117
+20-1-18 23:27:07.5|Info|MigrationLogger|*** 118: add_history_eventType_index migrating ***
+20-1-18 23:27:07.5|Info|add_history_eventType_index|Starting migration to 118
+20-1-18 23:27:07.5|Info|MigrationLogger|*** 119: separate_automatic_and_interactive_searches migrating ***
+20-1-18 23:27:07.5|Info|separate_automatic_and_interactive_searches|Starting migration to 119
+20-1-18 23:27:07.5|Info|MigrationLogger|*** 120: update_series_episodes_history_indexes migrating ***
+20-1-18 23:27:07.5|Info|update_series_episodes_history_indexes|Starting migration to 120
+20-1-18 23:27:07.5|Info|MigrationLogger|*** 121: update_animetosho_url migrating ***
+20-1-18 23:27:07.5|Info|update_animetosho_url|Starting migration to 121
+20-1-18 23:27:07.5|Info|MigrationLogger|*** 122: add_remux_qualities_in_profile migrating ***
+20-1-18 23:27:07.5|Info|add_remux_qualities_in_profile|Starting migration to 122
+20-1-18 23:27:07.5|Info|MigrationLogger|*** 123: add_history_seriesId_index migrating ***
+20-1-18 23:27:07.5|Info|add_history_seriesId_index|Starting migration to 123
+20-1-18 23:27:07.5|Info|MigrationLogger|*** 124: remove_media_browser_metadata migrating ***
+20-1-18 23:27:07.5|Info|remove_media_browser_metadata|Starting migration to 124
+20-1-18 23:27:07.5|Info|MigrationLogger|*** 125: remove_notify_my_android_and_pushalot_notifications migrating ***
+20-1-18 23:27:07.5|Info|remove_notify_my_android_and_pushalot_notifications|Starting migration to 125
+20-1-18 23:27:07.5|Info|MigrationLogger|*** 126: add_custom_filters migrating ***
+20-1-18 23:27:07.5|Info|add_custom_filters|Starting migration to 126
+20-1-18 23:27:07.5|Info|MigrationLogger|*** 127: rename_restrictions_to_release_profiles migrating ***
+20-1-18 23:27:07.5|Info|rename_restrictions_to_release_profiles|Starting migration to 127
+20-1-18 23:27:07.5|Info|MigrationLogger|*** 128: rename_quality_profiles_add_upgrade_allowed migrating ***
+20-1-18 23:27:07.5|Info|rename_quality_profiles_add_upgrade_allowed|Starting migration to 128
+20-1-18 23:27:07.5|Info|MigrationLogger|*** 129: add_relative_original_path_to_episode_file migrating ***
+20-1-18 23:27:07.5|Info|add_relative_original_path_to_episode_file|Starting migration to 129
+20-1-18 23:27:07.5|Info|MigrationLogger|*** 130: episode_last_searched_time migrating ***
+20-1-18 23:27:07.5|Info|episode_last_searched_time|Starting migration to 130
+20-1-18 23:27:07.5|Info|MigrationLogger|*** 131: download_propers_config migrating ***
+20-1-18 23:27:07.5|Info|download_propers_config|Starting migration to 131
+20-1-18 23:27:07.5|Info|MigrationLogger|*** 132: add_download_client_priority migrating ***
+20-1-18 23:27:07.5|Info|add_download_client_priority|Starting migration to 132
+20-1-18 23:27:07.6|Info|MigrationLogger|*** 134: add_specials_folder_format migrating ***
+20-1-18 23:27:07.6|Info|add_specials_folder_format|Starting migration to 134
+20-1-18 23:27:07.6|Info|MigrationLogger|*** 135: health_issue_notification migrating ***
+20-1-18 23:27:07.6|Info|health_issue_notification|Starting migration to 135
+20-1-18 23:27:07.6|Info|OwinHostController|Listening on the following URLs:
+20-1-18 23:27:07.6|Info|OwinHostController|  http://*:8989/
+20-1-18 23:27:08.1|Info|SonarrBootstrapper|Starting Web Server
+20-1-18 23:27:08.9|Info|UpdaterConfigProvider|Update mechanism BuiltIn not supported in the current configuration, changing to Docker.
+20-1-18 23:27:08.9|Info|UpdaterConfigProvider|External updater uses branch phantom-develop instead of the currently selected master, changing to phantom-develop.
+20-1-18 23:27:08.9|Info|QualityProfileService|Setting up default quality profiles
+20-1-18 23:27:09.0|Info|LanguageProfileService|Setting up default language profiles
+20-1-18 23:30:02.6|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+20-1-18 23:30:08.9|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+20-1-18 23:30:10.9|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+20-1-18 23:30:15.2|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+20-1-18 23:31:24.7|Warn|Torznab|Unable to connect to indexer
+
+[v3.0.3.663] NzbDrone.Core.Indexers.Torznab.TorznabException: Torznab error detected: Jackett.Common.IndexerException: Exception (btdb): Got redirected to another domain. Try changing the indexer URL to https://btdb.io/.
+ ---> System.Exception: Parse error
+ ---> Jackett.Common.ExceptionWithConfigData: Got redirected to another domain. Try changing the indexer URL to https://btdb.io/.
+   at Jackett.Common.Indexers.CardigannIndexer.CheckIfLoginIsNeeded(WebClientStringResult Result, IHtmlDocument document) in /home/appveyor/projects/jackett/src/Jackett.Common/Indexers/CardigannIndexer.cs:line 750
+   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in /home/appveyor/projects/jackett/src/Jackett.Common/Indexers/CardigannIndexer.cs:line 1252
+   --- End of inner exception stack trace ---
+   at Jackett.Common.Indexers.BaseWebIndexer.OnParseError(String results, Exception ex) in /home/appveyor/projects/jackett/src/Jackett.Common/Indexers/BaseIndexer.cs:line 846
+   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in /home/appveyor/projects/jackett/src/Jackett.Common/Indexers/CardigannIndexer.cs:line 1579
+   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query) in /home/appveyor/projects/jackett/src/Jackett.Common/Indexers/BaseIndexer.cs:line 331
+   --- End of inner exception stack trace ---
+   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query) in /home/appveyor/projects/jackett/src/Jackett.Common/Indexers/BaseIndexer.cs:line 351
+   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query) in /home/appveyor/projects/jackett/src/Jackett.Common/Indexers/BaseIndexer.cs:line 819
+   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in /home/appveyor/projects/jackett/src/Jackett.Server/Controllers/ResultsController.cs:line 367
+  at NzbDrone.Core.Indexers.Torznab.TorznabRssParser.PreProcess (NzbDrone.Core.Indexers.IndexerResponse indexerResponse) [0x000b8] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\TorznabRssParser.cs:42 
+  at NzbDrone.Core.Indexers.RssParser.ParseResponse (NzbDrone.Core.Indexers.IndexerResponse indexerResponse) [0x0000d] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\RssParser.cs:55 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].FetchPage (NzbDrone.Core.Indexers.IndexerRequest request, NzbDrone.Core.Indexers.IParseIndexerResponse parser) [0x00052] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:308 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x0000e] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:335 
+
+20-1-18 23:31:24.7|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log for more details
+20-1-18 23:31:30.8|Warn|Torznab|Unable to connect to indexer
+
+[v3.0.3.663] NzbDrone.Core.Indexers.Torznab.TorznabException: Torznab error detected: Jackett.Common.IndexerException: Exception (btdb): Got redirected to another domain. Try changing the indexer URL to https://btdb.io/.
+ ---> System.Exception: Parse error
+ ---> Jackett.Common.ExceptionWithConfigData: Got redirected to another domain. Try changing the indexer URL to https://btdb.io/.
+   at Jackett.Common.Indexers.CardigannIndexer.CheckIfLoginIsNeeded(WebClientStringResult Result, IHtmlDocument document) in /home/appveyor/projects/jackett/src/Jackett.Common/Indexers/CardigannIndexer.cs:line 750
+   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in /home/appveyor/projects/jackett/src/Jackett.Common/Indexers/CardigannIndexer.cs:line 1252
+   --- End of inner exception stack trace ---
+   at Jackett.Common.Indexers.BaseWebIndexer.OnParseError(String results, Exception ex) in /home/appveyor/projects/jackett/src/Jackett.Common/Indexers/BaseIndexer.cs:line 846
+   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in /home/appveyor/projects/jackett/src/Jackett.Common/Indexers/CardigannIndexer.cs:line 1579
+   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query) in /home/appveyor/projects/jackett/src/Jackett.Common/Indexers/BaseIndexer.cs:line 331
+   --- End of inner exception stack trace ---
+   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query) in /home/appveyor/projects/jackett/src/Jackett.Common/Indexers/BaseIndexer.cs:line 351
+   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query) in /home/appveyor/projects/jackett/src/Jackett.Common/Indexers/BaseIndexer.cs:line 819
+   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in /home/appveyor/projects/jackett/src/Jackett.Server/Controllers/ResultsController.cs:line 367
+  at NzbDrone.Core.Indexers.Torznab.TorznabRssParser.PreProcess (NzbDrone.Core.Indexers.IndexerResponse indexerResponse) [0x000b8] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\TorznabRssParser.cs:42 
+  at NzbDrone.Core.Indexers.RssParser.ParseResponse (NzbDrone.Core.Indexers.IndexerResponse indexerResponse) [0x0000d] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\RssParser.cs:55 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].FetchPage (NzbDrone.Core.Indexers.IndexerRequest request, NzbDrone.Core.Indexers.IParseIndexerResponse parser) [0x00052] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:308 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x0000e] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:335 
+
+20-1-18 23:31:30.8|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log for more details
+20-1-18 23:31:32.8|Warn|Torznab|Unable to connect to indexer
+
+[v3.0.3.663] NzbDrone.Core.Indexers.Torznab.TorznabException: Torznab error detected: Jackett.Common.IndexerException: Exception (btdb): Got redirected to another domain. Try changing the indexer URL to https://btdb.io/.
+ ---> System.Exception: Parse error
+ ---> Jackett.Common.ExceptionWithConfigData: Got redirected to another domain. Try changing the indexer URL to https://btdb.io/.
+   at Jackett.Common.Indexers.CardigannIndexer.CheckIfLoginIsNeeded(WebClientStringResult Result, IHtmlDocument document) in /home/appveyor/projects/jackett/src/Jackett.Common/Indexers/CardigannIndexer.cs:line 750
+   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in /home/appveyor/projects/jackett/src/Jackett.Common/Indexers/CardigannIndexer.cs:line 1252
+   --- End of inner exception stack trace ---
+   at Jackett.Common.Indexers.BaseWebIndexer.OnParseError(String results, Exception ex) in /home/appveyor/projects/jackett/src/Jackett.Common/Indexers/BaseIndexer.cs:line 846
+   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in /home/appveyor/projects/jackett/src/Jackett.Common/Indexers/CardigannIndexer.cs:line 1579
+   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query) in /home/appveyor/projects/jackett/src/Jackett.Common/Indexers/BaseIndexer.cs:line 331
+   --- End of inner exception stack trace ---
+   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query) in /home/appveyor/projects/jackett/src/Jackett.Common/Indexers/BaseIndexer.cs:line 351
+   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query) in /home/appveyor/projects/jackett/src/Jackett.Common/Indexers/BaseIndexer.cs:line 819
+   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in /home/appveyor/projects/jackett/src/Jackett.Server/Controllers/ResultsController.cs:line 367
+  at NzbDrone.Core.Indexers.Torznab.TorznabRssParser.PreProcess (NzbDrone.Core.Indexers.IndexerResponse indexerResponse) [0x000b8] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\TorznabRssParser.cs:42 
+  at NzbDrone.Core.Indexers.RssParser.ParseResponse (NzbDrone.Core.Indexers.IndexerResponse indexerResponse) [0x0000d] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\RssParser.cs:55 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].FetchPage (NzbDrone.Core.Indexers.IndexerRequest request, NzbDrone.Core.Indexers.IParseIndexerResponse parser) [0x00052] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:308 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x0000e] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:335 
+
+20-1-18 23:31:32.8|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log for more details
+20-1-18 23:33:37.5|Warn|Torznab|Unable to connect to indexer
+
+[v3.0.3.663] System.Xml.XmlException: Unexpected XML
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.ParseCapabilities (NzbDrone.Common.Http.HttpResponse response) [0x00364] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:162 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x000d8] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:74 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x00069] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:23 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:27 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00007] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:334 
+
+20-1-18 23:33:37.5|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log for more details
+20-1-18 23:33:43.8|Warn|Torznab|Unable to connect to indexer
+
+[v3.0.3.663] System.Xml.XmlException: Unexpected XML
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.ParseCapabilities (NzbDrone.Common.Http.HttpResponse response) [0x00364] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:162 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x000d8] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:74 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x00069] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:23 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:27 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00007] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:334 
+
+20-1-18 23:33:43.8|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log for more details
+20-1-18 23:33:44.4|Warn|Torznab|Unable to connect to indexer
+
+[v3.0.3.663] System.Xml.XmlException: Unexpected XML
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.ParseCapabilities (NzbDrone.Common.Http.HttpResponse response) [0x00364] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:162 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x000d8] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:74 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x00069] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:23 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:27 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00007] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:334 
+
+20-1-18 23:33:44.4|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log for more details
+20-1-18 23:33:44.8|Warn|Torznab|Unable to connect to indexer
+
+[v3.0.3.663] System.Xml.XmlException: Unexpected XML
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.ParseCapabilities (NzbDrone.Common.Http.HttpResponse response) [0x00364] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:162 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x000d8] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:74 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x00069] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:23 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:27 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00007] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:334 
+
+20-1-18 23:33:44.8|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log for more details
+20-1-18 23:33:45.0|Warn|Torznab|Unable to connect to indexer
+
+[v3.0.3.663] System.Xml.XmlException: Unexpected XML
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.ParseCapabilities (NzbDrone.Common.Http.HttpResponse response) [0x00364] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:162 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x000d8] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:74 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x00069] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:23 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:27 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00007] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:334 
+
+20-1-18 23:33:45.0|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log for more details
+20-1-18 23:33:45.1|Warn|Torznab|Unable to connect to indexer
+
+[v3.0.3.663] System.Xml.XmlException: Unexpected XML
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.ParseCapabilities (NzbDrone.Common.Http.HttpResponse response) [0x00364] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:162 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x000d8] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:74 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x00069] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:23 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:27 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00007] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:334 
+
+20-1-18 23:33:45.1|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log for more details
+20-1-18 23:33:45.3|Warn|Torznab|Unable to connect to indexer
+
+[v3.0.3.663] System.Xml.XmlException: Unexpected XML
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.ParseCapabilities (NzbDrone.Common.Http.HttpResponse response) [0x00364] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:162 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x000d8] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:74 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x00069] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:23 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:27 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00007] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:334 
+
+20-1-18 23:33:45.3|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log for more details
+20-1-18 23:33:45.5|Warn|Torznab|Unable to connect to indexer
+
+[v3.0.3.663] System.Xml.XmlException: Unexpected XML
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.ParseCapabilities (NzbDrone.Common.Http.HttpResponse response) [0x00364] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:162 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x000d8] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:74 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x00069] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:23 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:27 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00007] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:334 
+
+20-1-18 23:33:45.5|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log for more details
+20-1-18 23:33:45.6|Warn|Torznab|Unable to connect to indexer
+
+[v3.0.3.663] System.Xml.XmlException: Unexpected XML
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.ParseCapabilities (NzbDrone.Common.Http.HttpResponse response) [0x00364] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:162 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x000d8] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:74 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x00069] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:23 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:27 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00007] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:334 
+
+20-1-18 23:33:45.6|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log for more details
+20-1-18 23:33:45.8|Warn|Torznab|Unable to connect to indexer
+
+[v3.0.3.663] System.Xml.XmlException: Unexpected XML
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.ParseCapabilities (NzbDrone.Common.Http.HttpResponse response) [0x00364] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:162 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x000d8] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:74 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x00069] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:23 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:27 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00007] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:334 
+
+20-1-18 23:33:45.8|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log for more details
+20-1-18 23:33:46.0|Warn|Torznab|Unable to connect to indexer
+
+[v3.0.3.663] System.Xml.XmlException: Unexpected XML
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.ParseCapabilities (NzbDrone.Common.Http.HttpResponse response) [0x00364] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:162 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x000d8] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:74 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x00069] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:23 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:27 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00007] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:334 
+
+20-1-18 23:33:46.0|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log for more details
+20-1-18 23:34:04.2|Warn|Torznab|Unable to connect to indexer
+
+[v3.0.3.663] System.Xml.XmlException: Unexpected XML
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.ParseCapabilities (NzbDrone.Common.Http.HttpResponse response) [0x00364] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:162 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x000d8] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:74 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x00069] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:23 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:27 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00007] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:334 
+
+20-1-18 23:34:04.2|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log for more details
+20-1-18 23:34:05.2|Warn|Torznab|Unable to connect to indexer
+
+[v3.0.3.663] System.Xml.XmlException: Unexpected XML
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.ParseCapabilities (NzbDrone.Common.Http.HttpResponse response) [0x00364] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:162 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x000d8] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:74 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x00069] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:23 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:27 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00007] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:334 
+
+20-1-18 23:34:05.2|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log for more details
+20-1-18 23:34:06.0|Warn|Torznab|Unable to connect to indexer
+
+[v3.0.3.663] System.Xml.XmlException: Unexpected XML
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.ParseCapabilities (NzbDrone.Common.Http.HttpResponse response) [0x00364] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:162 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x000d8] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:74 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x00069] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:23 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:27 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00007] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:334 
+
+20-1-18 23:34:06.0|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log for more details
+20-1-18 23:34:06.1|Warn|Torznab|Unable to connect to indexer
+
+[v3.0.3.663] System.Xml.XmlException: Unexpected XML
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.ParseCapabilities (NzbDrone.Common.Http.HttpResponse response) [0x00364] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:162 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x000d8] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:74 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x00069] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:23 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:27 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00007] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:334 
+
+20-1-18 23:34:06.1|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log for more details
+20-1-18 23:34:06.3|Warn|Torznab|Unable to connect to indexer
+
+[v3.0.3.663] System.Xml.XmlException: Unexpected XML
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.ParseCapabilities (NzbDrone.Common.Http.HttpResponse response) [0x00364] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:162 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x000d8] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:74 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x00069] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:23 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:27 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00007] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:334 
+
+20-1-18 23:34:06.3|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log for more details
+20-1-18 23:34:36.1|Warn|Torznab|Unable to connect to indexer
+
+[v3.0.3.663] System.Xml.XmlException: Unexpected XML
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.ParseCapabilities (NzbDrone.Common.Http.HttpResponse response) [0x00364] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:162 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x000d8] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:74 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x00069] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:23 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:27 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00007] in M:\BuildAgent\work\63739567f01dbcc2\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:334 
+
+20-1-18 23:34:36.1|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, check the log for more details
+20-1-18 23:35:47.3|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+20-1-18 23:35:56.4|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results were returned from your indexer. This may be an issue with the indexer or your indexer category settings.

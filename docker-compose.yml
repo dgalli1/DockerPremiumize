@@ -1,0 +1,60 @@
+version: "3.7"
+services:
+  sonarr:
+    image: linuxserver/sonarr:preview
+    container_name: sonarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Zurich
+      - UMASK_SET=022 #optional
+    volumes:
+      - ./config_sonarr:/config
+      - ./blackhole:/blackhole
+      - ./rclone:/blackhole_watch
+    ports:
+      - 127.0.0.1:8989:8989
+    expose: 
+      - 8989
+    restart: unless-stopped
+  jackett:
+    image: linuxserver/jackett
+    container_name: jackett
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Zurich
+      - RUN_OPTS=<run options here> #optional
+    volumes:
+      - ./config_jackett:/config
+      - ./blackhole:/downloads
+    ports:
+      - 127.0.0.1:9117:9117
+    expose:
+      - 9117
+    restart: unless-stopped
+  premiumizephp:
+    image: premiumizephp:1.0
+    container_name: premiumizephp
+    environment: 
+      - API_KEY=
+      - LIBRARY_FOLDER=
+      - DOWNLOAD_FOLDER=
+    volumes:
+      - ./blackhole:/drophere
+      - ./rclone:/watch_folder
+  reverseproxy:
+      image: nginx:latest
+      ports:
+          - "127.0.0.1:80:80"
+      volumes:
+          - ./premiumizephp:/code
+          - ./nginx.conf:/etc/nginx/nginx.conf
+  php:
+    image: php:7-fpm
+    volumes:
+      - ./premiumizephp:/code
+    environment: 
+      - API_KEY=
+      - LIBRARY_FOLDER=
+      - DOWNLOAD_FOLDER=
