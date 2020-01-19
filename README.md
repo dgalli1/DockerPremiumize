@@ -134,16 +134,16 @@ http://localhost/premiumapi/index.php
 # Additonal Steps
 ## Changing API Keys
 You may wan't to change your API Keys for Sonnar & Jackett. You can do both of this Tasks via the Respective UI.
-If you change the Jackett API Key you have reconfigure Every Index in Sonarr.
+If you change the Jackett API Key you have to reconfigure every indexer in Sonarr.
 
 ## Password Protection
 
-You could always put the Port into a Reverse Proxy to secure the whole thing via htbasic auth. But their is also a passwort Option inside of Jackett & Sonarr.
+You could always put the whole Application behind a  Reverse Proxy to secure the whole thing via htbasic auth. But their is also a passwort Option inside of Jackett & Sonarr. I would prefere the Reverse Proxy, because then you will also be able to get a HTTPS certificate.
 
 # FAQ
 ## Updating
 
-I Will not Update the config Folders. So all you have to do is to execute git pull and docker-compose pull
+All you have to do is to execute git pull and docker-compose pull
 
 ## But i want to download everything
 
