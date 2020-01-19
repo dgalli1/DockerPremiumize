@@ -121,6 +121,7 @@ This will start the whole service.
 You now got Jackett & Sonarr connected to the Premiumize API
 You should now be able to access the urls belowe.
 ```
+http://localhost/
 http://localhost/jackett/
 http://localhost/premiumapi/index.php
 ```
