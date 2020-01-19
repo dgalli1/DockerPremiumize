@@ -130,3 +130,30 @@ http://localhost/
 http://localhost/jackett/
 http://localhost/premiumapi/index.php
 ```
+
+# Additonal Steps
+## Changing API Keys
+You may wan't to change your API Keys for Sonnar & Jackett. You can do both of this Tasks via the Respective UI.
+If you change the Jackett API Key you have reconfigure Every Index in Sonarr.
+
+## Password Protection
+
+You could always put the Port into a Reverse Proxy to secure the whole thing via htbasic auth. But their is also a passwort Option inside of Jackett & Sonarr.
+
+# FAQ
+## Updating
+
+I Will not Update the config Folders. So all you have to do is to execute git pull and docker-compose pull
+
+## But i want to download everything
+
+WIth this setup its also possible to download everything. But its not as convinent as using Premiumizer.
+Anways if you wan't to do it i would suggest looking into rclone move. Under Linux a simple Cronjob that Downloads everything should be enough. I will also look into it so that a Webhook will trigger a automatic Download.
+
+## My whole traffic is gone
+
+Make sure to never change the Setting "Read Only" under Download Clients. Otherwhise Sonarr will download the Whole File everytime it downloads something. But because this fails sometimes with RClone it can happen that Sonarr continues to doing that till you whole traffic is depleted.
+
+## Why are ue using Sonarr Preview?
+
+Its pretty stable and basicly everything for a final release is done. It also has a design that is not completly terible on mobile devices.
