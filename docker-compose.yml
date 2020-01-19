@@ -34,7 +34,7 @@ services:
       - 9117
     restart: unless-stopped
   premiumizephp:
-    image: premiumizephp:1.0
+    image: dgalli1/premiumizephp:1.0
     container_name: premiumizephp
     environment: 
       - API_KEY=
