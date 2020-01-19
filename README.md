@@ -1,7 +1,7 @@
 # premiumizesonarr
 
-Connects Sonarr & Jacket with Premiumize.me
-While downloading everything over the cloud. The files while not be downloaded to your local computer.
+Connects Sonarr & Jacket with Premiumize.me.
+Downlaods everything over the cloud. The files while not be downloaded to your local computer.
 Sonarr is already preconfigured to start downloading via Torrent. If you have Private trackers you can easly add them following the provided examples.
 
 # Requirements
@@ -97,7 +97,7 @@ In this URL your ID would be WrjIfPb096CUEc6nrsdfs
 
 ## Rclone
 
-Next you have to mount premiumize via rclone, for this to work you either need a gui or a other computer that has rclone installed.
+Next you have to mount premiumize via rclone, for this to work you either need a gui or another computer that has rclone installed.
 ```
 rclone config
 ```
@@ -105,15 +105,20 @@ Just follow the steps on the screen and make sure to name your connection "premi
 
 # Run IT
 ## Mount Rclone
-You already configured Rclone in the step above now all you have to do is mount the Folder so that it gets readable for sonarr. First ensure that a folder called rclone exists in the Root Folder of Repository. Create it if it does not exist.
+You already configured Rclone in the step above now all you have to do is mount the Folder so that it gets readable for sonarr. First ensure that a folder called rclone exists in the Root Folder of Repository. Create it if it does not .
 
-Next you can mount it. Just run the command down belowe after going to the correct folder with your Terminal/PowerShell.
+Next you can mount it. Just run the command down belowe after going to the root folder of the Project with your Terminal.
+Linux/MacOS
 ```
-nohup rclone mount premiumize:/ rclone --allow-other --allow-non-empty --dir-cache-time=2m --cache-chunk-size=10M --cache-info-age=168h --cache-workers=5 --attr-timeout=1s --syslog --rc --cache-tmp-wait-time 30m --log-level INFO &> logs/rclone.log < /dev/null &
+nohup rclone mount premiumize:/ rclone --allow-other --allow-non-empty --dir-cache-time=2m --cache-chunk-size=10M --cache-info-age=168h --cache-workers=5 --attr-timeout=1s --syslog --rc --cache-tmp-wait-time 30m --log-level INFO &> rclone.log < /dev/null &
+```
+Windows
+```
+rclone mount premiumize:/ rclone --allow-other --allow-non-empty --dir-cache-time=2m --cache-chunk-size=10M --cache-info-age=168h --cache-workers=5 --attr-timeout=1s --syslog --rc --cache-tmp-wait-time 30m --log-level INFO
 ```
 
 ## Docker
-To execute it go the correct folder either in a Terminal or Powershell and then execute docker-compose up -d
+Go to the project folder again and run docker-compose up -d
 This will start the whole service.
 
 # Hurray
