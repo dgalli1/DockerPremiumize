@@ -76,11 +76,11 @@ services:
           - ./nginx.conf:/etc/nginx/nginx.conf
 ```
 ### Folder IDS
-For this config to work you have to create 2 Folders at the root in your premiumize cloud.
-The required folders have to be named sonarr & sonarr_download.
-In the Folder named sonarr you're sorted library will be kept. While in the Folder sonarr_download pending Downloads while reside before they are imported.
+For this config to work you have to create 3 Folders at the root of your premiumize cloud.
+The required folders have to be named sonarr, sonarr_download, radarr.
+In the Folder named sonarr you're sorted library will be kept. While in the Folder sonarr_download pending Downloads from Radarr and Sonarr will reside before they are imported.
 
-After creating a Folder you have to add the ID of the Folder to your dockercompose settings file.
+After creating the sonarr_download Folder you have to add the ID of the Folder to your dockercompose settings file.
 You can get the id by looking at the url you're currently in after entering the folder.
 E.x
 ```https://www.premiumize.me/files?folder_id=WrjIfPb096CUEc6nrsdfs```
