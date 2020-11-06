@@ -4,10 +4,8 @@ require __DIR__.'/vendor/autoload.php';
 // deactivate because this sucks with docker lets just request env variables directly...
 // $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 // $dotenv->load();
-
 $required_key = [
     'API_KEY',
-    'LIBRARY_FOLDER',
     'DOWNLOAD_FOLDER'
 ];
 foreach ($required_key as $key => $value) {
