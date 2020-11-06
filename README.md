@@ -63,7 +63,6 @@ services:
     container_name: premiumizephp
     environment: 
       - API_KEY= #Premiumize API-KEY
-      - LIBRARY_FOLDER= #Id of your libary folder see below for explanation
       - DOWNLOAD_FOLDER= #Id of your download folder see below for explanation
     volumes:
       - ./blackhole:/drophere
@@ -75,14 +74,6 @@ services:
       volumes:
           - ./premiumizephp:/code
           - ./nginx.conf:/etc/nginx/nginx.conf
-  php:
-    image: php:7-fpm
-    volumes:
-      - ./premiumizephp:/code
-    environment: 
-      - API_KEY= #Premiumize API-KEY
-      - LIBRARY_FOLDER= #Id of your libary folder see below for explanation
-      - DOWNLOAD_FOLDER= #Id of your download folder see below for explanation
 ```
 ### Folder IDS
 For this config to work you have to create 2 Folders at the root in your premiumize cloud.

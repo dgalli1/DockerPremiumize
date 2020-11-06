@@ -17,8 +17,25 @@ services:
     expose: 
       - 8989
     restart: unless-stopped
+  radarr:
+    image: linuxserver/radarr:nightly
+    container_name: radarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Zurich
+      - UMASK_SET=022 #optional
+    volumes:
+      - ./config_radarr:/config
+      - ./rclone:/library
+      - ./blackhole:/blackhole
+    ports:
+      - 127.0.0.1:7878:7878
+    expose:
+      - 7878
+    restart: unless-stopped
   jackett:
-    image: linuxserver/jackett
+    image: linuxserver/jackett:latest
     container_name: jackett
     environment:
       - PUID=1000
@@ -34,27 +51,32 @@ services:
       - 9117
     restart: unless-stopped
   premiumizephp:
-    image: dgalli1/premiumizephp:1.0
+    image: dgalli1/premiumizephp:latest
     container_name: premiumizephp
     environment: 
       - API_KEY=
-      - LIBRARY_FOLDER=
       - DOWNLOAD_FOLDER=
     volumes:
       - ./blackhole:/drophere
       - ./rclone:/watch_folder
+  bazarr:
+    image: linuxserver/bazarr:latest
+    container_name: bazarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+      - UMASK_SET=022 #optional
+    volumes:
+      - ./config_bazarr:/config
+      - ./rclone:/library
+    ports:
+      - 6767:6767
+    restart: unless-stopped
   reverseproxy:
       image: nginx:latest
       ports:
-          - "127.0.0.1:80:80"
+          - "127.0.0.1:90:80"
       volumes:
           - ./premiumizephp:/code
           - ./nginx.conf:/etc/nginx/nginx.conf
-  php:
-    image: php:7-fpm
-    volumes:
-      - ./premiumizephp:/code
-    environment: 
-      - API_KEY=
-      - LIBRARY_FOLDER=
-      - DOWNLOAD_FOLDER=

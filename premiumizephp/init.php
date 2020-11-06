@@ -1,6 +1,5 @@
 <?php
 require __DIR__.'/premiumize.php';
-require __DIR__ .'/PremiumizePathCache.php';
 require __DIR__.'/vendor/autoload.php';
 // deactivate because this sucks with docker lets just request env variables directly...
 // $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
